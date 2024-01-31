@@ -1,0 +1,39 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.meme-card {
+    height:auto;
+    width: 270px;
+    margin: 10px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+}
+
+img {
+    width: 250px;
+    height: 150px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    object-fit: fit;
+    display : block;
+}
+
+video {
+    width: 250px;
+    height: 150px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 2px;
+    object-fit: fit;
+    display : block;   
+}
+
+.meme-details {
+    margin: 10px;    
+}
