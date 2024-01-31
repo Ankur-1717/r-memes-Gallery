@@ -1,4 +1,3 @@
-// pages/index.js
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Gallery from '../components/Gallery'
@@ -23,7 +22,6 @@ const Home = () => {
       const response = await axios.get(
         `https://www.reddit.com/r/memes.json?after=${after || ''}`
       )
-      console.log('API Response:', response.data)
 
       const newMemeData = response.data.data.children.map(child => ({
         id: child.data.id,
